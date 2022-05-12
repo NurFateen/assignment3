@@ -1,0 +1,15 @@
+* {
+ -fx-font-size: 18;
+ -fx-padding: 5;
+ -fx-alignment: center;
+}
+.title {
+ -fx-pref-width: Infinity;
+ -fx-font: normal bolder 22 serif;
+}
+Button  {
+ -fx-pref-width: 200;
+ -fx-pref-height: 200;
+}
+
+ 

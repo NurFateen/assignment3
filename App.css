@@ -1,15 +1,54 @@
-* {
- -fx-font-size: 18;
- -fx-padding: 5;
- -fx-alignment: center;
+.{-fx-alignment: center;
 }
 .title {
  -fx-pref-width: Infinity;
  -fx-font: normal bolder 22 serif;
-}
-Button  {
- -fx-pref-width: 200;
- -fx-pref-height: 200;
+-fx-font-size: 18;
+ -fx-padding: 5;
+ -fx-alignment: center;
 }
 
- 
+.editbt{
+ -fx-pref-width: 100;
+ -fx-pref-height: 100;
+ -fx-font-size: 18;
+ -fx-padding: 5;
+-fx-alignment: center;
+}
+.paybt{
+ -fx-pref-width: 100;
+ -fx-pref-height: 100;
+ -fx-font-size: 18;
+ -fx-padding: 5;
+-fx-alignment: center;
+}
+.gradebt{
+ -fx-pref-width: 100;
+ -fx-pref-height: 100;
+ -fx-font-size: 18;
+ -fx-padding: 5;
+-fx-alignment: center;
+}
+
+.calculate{
+-fx-pref-width: 100;
+ -fx-pref-height: 40;
+-fx-alignment: center;
+}
+
+.previous{
+-fx-pref-width: 100;
+ -fx-pref-height: 40;
+-fx-alignment: center;
+}
+.text-field{
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+-fx-alignment: center;
+}
+.eng{
+-fx-text-alignment: center;
+}
+
+
+

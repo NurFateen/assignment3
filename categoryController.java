@@ -18,27 +18,36 @@ import javafx.scene.Node;
 
 public class categoryController{
 
-	@FXML
-	Button idbutton1;
-	Button idbutton2;
-	Button idbutton3;
-
 	private Stage stage;
 	 private Scene scene;
 	 private Parent root; 
 	 	
 	public void edit(ActionEvent event) throws IOException{
-		
+		Parent root = FXMLLoader.load(getClass().getResource("/educationApp/view/edit.fxml"));
+		 scene = new Scene(root, 500, 500);
+		  Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		  window.setScene(scene);
+		  window.show();
+		  
+		  educationApp.mainStage.setScene(scene);
+		  
 		
 	}
 
 	public void payment(ActionEvent event) throws IOException {
-		
+		Parent root = FXMLLoader.load(getClass().getResource("/educationApp/view/payment.fxml"));
+		 scene = new Scene(root, 500, 500);
+		  Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		  window.setScene(scene);
+		  window.show();
+		  
+		  educationApp.mainStage.setScene(scene);
+		  
 	}
 	public void grade(ActionEvent event) throws IOException {
 		
-		Parent root = FXMLLoader.load(getClass().getResource("view/grade.fxml"));
-		 scene = new Scene(root);
+		Parent root = FXMLLoader.load(getClass().getResource("/educationApp/view/grade.fxml"));
+		 scene = new Scene(root, 500, 500);
 		  Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  window.setScene(scene);
 		  window.show();

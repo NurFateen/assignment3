@@ -1,16 +1,48 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
-<?import java.net.URL?>
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
+<?import java.net.URL?>
 
-<VBox xmlns:fx="https://javafx.org/fxml/1" fx:controller="educationApp.controller.categoryController">
- <stylesheets>
- <URL value="@App.css" />
- </stylesheets>
- 
-<Label text="Grade" styleClass="title" />
- <Label styleClass="title" />
+<BorderPane xmlns:fx="https://javafx.org/fxml/1" fx:controller="educationApp.controller.gradeController">
 
+<stylesheets>
+<URL value="@app.css" />
+</stylesheets>
 
-</VBox>
+<top>
+<Label text="Student Grade" styleClass="title"/>
+</top>
+
+<center>
+<GridPane>
+<Label text="Enter marks to respective modules" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+<Label text="English" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="eng"/>
+<TextField fx:id="idEng" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+<TextField fx:id="enggrade" GridPane.columnIndex="2" GridPane.rowIndex="1" disable="true" />
+
+<Label text="Bahasa Melayu" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+<TextField fx:id="idBM" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+<TextField fx:id="bmgrade" GridPane.columnIndex="2" GridPane.rowIndex="3" disable="true" />
+
+<Label text="Mathematics" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+<TextField fx:id="idMath" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+<TextField fx:id="mathgrade" GridPane.columnIndex="2" GridPane.rowIndex="5" disable="true" />
+
+<Label text="Science" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+<TextField fx:id="idSci" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+<TextField fx:id="scigrade" GridPane.columnIndex="2" GridPane.rowIndex="7" disable="true" />
+
+<Label text="Average" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+<TextField fx:id="idAve" GridPane.columnIndex="1" GridPane.rowIndex="9" disable="true"/>
+
+<Label text="GPA" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+<TextField fx:id="idGPA" GridPane.columnIndex="1" GridPane.rowIndex="11" disable="true"/>
+
+<Button text="Calculate" onAction="#calculate" GridPane.columnIndex="1" GridPane.rowIndex="13" styleClass="calculate"/>
+<Button text="Back" onAction="#previous" GridPane.columnIndex="2" GridPane.rowIndex="13" styleClass="previous"/>
+
+</GridPane>
+</center>
+</BorderPane>

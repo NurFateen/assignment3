@@ -4,16 +4,21 @@
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
 
-<VBox xmlns:fx="https://javafx.org/fxml/1" fx:controller="educationApp.controller.categoryController">
+<BorderPane xmlns:fx="https://javafx.org/fxml/1" fx:controller="educationApp.controller.categoryController">
  <stylesheets>
  <URL value="@App.css" />
  </stylesheets>
  
-<Label text="Welcome To Education App Category" styleClass="title" />
- <Label styleClass="title" />
- 
- <Button fx:id="idbutton1" onAction="#edit" styleClass="button1" text="Edit Profile"/>
- <Button fx:id="idbutton2" onAction="#payment" styleClass="button2" text="Payment"/>
- <Button fx:id="idbutton3" onAction="#grade" styleClass="button3" text="Grade"/>
+ <top>
+<Label text="Welcome To Education App Category" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="title"/>
+ </top>
 
-</VBox>
+<center>
+<GridPane>
+ <Button fx:id="idbutton1" onAction="#edit" styleClass="editbt" text="Edit Profile" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+ <Button fx:id="idbutton2" onAction="#payment" styleClass="paybt" text="Payment" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
+ <Button fx:id="idbutton3" onAction="#grade" styleClass="gradebt" text="Grade" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
+</GridPane>
+</center>
+
+</BorderPane>
